@@ -6,7 +6,7 @@
 ## Create data frame for bubble plot
 ##-------------------------------------------------------------
 
-load("~/Usoskin/NP1vsOthers_Bubble_plotdata")
+load("./NP1vsOthers_Bubble_plotdata")
 #### bubble plot
 Sig=plotdata[which(plotdata$Log>30),]
 BP = Sig[which(Sig$Category=="BIOLOGICAL PROCESS"),]
@@ -25,6 +25,7 @@ unique(MF$Term)[2])
 Sig = Sig[which(Sig$Term %in% names1),]
 Sig = Sig[!duplicated(Sig$Term),]
 unique(Sig$Term)
+
 ##-------------------------------------------------------------
 ## ggplot function for bubble plot
 ##-------------------------------------------------------------
