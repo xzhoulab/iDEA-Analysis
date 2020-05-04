@@ -26,7 +26,7 @@ Sig$Term = tolower(Sig$Term)
 ##-------------------------------------------------------------
 library(ggplot2)
 library("ggrepel")
-p4 = ggplot(plotdata, aes(x = IDNum, y = Log,color = Category))+
+p4 = ggplot(plotdata, aes(x = IDNum, y = Log10_Pvalue_Louis,color = Category))+
 geom_point(shape = 19,aes(fill = Category, size = Count,shape = 19),alpha=0.8)+
 scale_radius()+
 labs(x = "", y = expression(paste(bold(-log[10]),bold("("),bolditalic(p),bold("-value)"))))+
