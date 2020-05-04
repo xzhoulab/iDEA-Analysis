@@ -6,7 +6,7 @@
 ## Create data frame for bubble plot
 ##-------------------------------------------------------------
 
-load("./NP1vsOthers_Bubble_plotdata")
+load("./plotdata_Figure5e.RData")
 #### bubble plot
 Sig=plotdata[which(plotdata$Log>30),]
 BP = Sig[which(Sig$Category=="BIOLOGICAL PROCESS"),]
